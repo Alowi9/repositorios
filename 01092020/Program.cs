@@ -59,7 +59,15 @@ namespace _01092020
 
         }
 
-     
+        /* 
+            ref en variables sirven para llamar a las variables en otros metodos siempre
+        y cuando las variables esten inicializadas
+
+        out  sirven cuando llamas a un metodo y dentro del metodo te devuelven con los 
+        valores cargado, no es necesario inicializar las variables
+
+         */ 
+
     }
     
 }
