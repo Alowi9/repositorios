@@ -7,7 +7,7 @@ namespace _01092020
         static void Main(string[] args)
         {
 
-            Random r = new Random();
+           /* Random r = new Random();
             int numeroSecreto = r.Next(10);
             int numero= 0;
             int maxIntentos = 3;
@@ -55,6 +55,47 @@ namespace _01092020
                 string valor2 = Console.ReadLine();
                 numero = int.Parse(valor2);
             }
+         
+            */
+
+            /* 
+           armar un programa que le pida al usuario ingresar el año de la fecha de nacimiento 
+           y calcular si fue biciesto o no
+           encapsular en un metodo el ingreso de datos pasando el texto a mostrarle al usuario
+            y en otro metodo el calculo de si es biciesto devolviendo un valor booleano
+
+            */
+
+            
+           Console.WriteLine(calcularAnioBisiesto(pedirAño("Ingrese su año de nacimiento")) );
+
+
+            static int pedirAño(string mensaje)
+            {
+                Console.WriteLine(mensaje);
+                string valor = Console.ReadLine();
+                return int.Parse(valor);
+            }
+
+            static bool calcularAnioBisiesto(int a)
+            {
+                
+                if (a % 4 == 0 && a % 100 != 0 )
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            
+            }
+
+         
+            
+
+
+
 
 
         }
@@ -66,9 +107,20 @@ namespace _01092020
         out  sirven cuando llamas a un metodo y dentro del metodo te devuelven con los 
         valores cargado, no es necesario inicializar las variables
 
-         */ 
+         */
+
+
+
+
+       
+
+        
+
+
+
+
 
     }
-    
+
 }
 
